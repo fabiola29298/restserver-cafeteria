@@ -14,6 +14,6 @@ let urlDB;
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/cafe';
 } else {
-    urlDB = 'mongodb+srv://fabiola-admin:7ev6E2FUh@fabiola-cluster1-xzxzr.mongodb.net/udemy-cafe?retryWrites=true&w=majority';
+    urlDB = 'mongodb+srv://fabiola-admin:7ev6E2FUh@fabiola-cluster1-xzxzr.mongodb.net/udemy-cafe';
 }
 process.env.URLDB = urlDB;
