@@ -83,7 +83,7 @@ app.get('/productos/:id', (req, res) => {
 app.get('/productos/buscar/:termino', verificaToken, (req, res) => {
 
     let termino = req.params.termino;
-
+    // creando expresion regular, y 'i' para no afectar cuando usas mayusculas
     let regex = new RegExp(termino, 'i');
 
     Producto.find({ nombre: regex })
